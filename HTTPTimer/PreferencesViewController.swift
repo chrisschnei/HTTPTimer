@@ -16,25 +16,25 @@ class PreferencesViewController: NSViewController {
     @IBOutlet weak var saveButton: NSButton!
     
     func loadConfigurationPlist() {
-        let path = NSBundle.mainBundle().pathForResource("HTTPTimer", ofType: "plist")
+        let path = Bundle.main.path(forResource: "HTTPTimer", ofType: "plist")
         let myDict = NSDictionary(contentsOfFile: path!)
         if (myDict != nil) {
-            self.URLText.stringValue = myDict!.valueForKey("HTTPUrl")! as! String
-            self.IntervalText.selectItemWithTitle(myDict!.valueForKey("TimeInterval")!.stringValue)
+            self.URLText.stringValue = myDict!.value(forKey: "HTTPUrl")! as! String
+            self.IntervalText.selectItem(withTitle: (myDict!.value(forKey: "TimeInterval")! as AnyObject).stringValue)
         } else {
             print("WARNING: Couldn't create dictionary from HTTPTimer.plist! Default values will be used!")
         }
     }
     
-    @IBAction func saveConfiguration(sender: AnyObject) {
+    @IBAction func saveConfiguration(_ sender: AnyObject) {
         //set data
-        test.HTTPUrlID = URLText.stringValue
+        test.HTTPUrlID = URLText.stringValue as AnyObject
         test.TimeIntervalID = (self.IntervalText.selectedItem!.title as NSString).doubleValue
-        let path = NSBundle.mainBundle().pathForResource("HTTPTimer", ofType: "plist")
+        let path = Bundle.main.path(forResource: "HTTPTimer", ofType: "plist")
         let dict: NSMutableDictionary = NSMutableDictionary()
-        dict.setObject(test.HTTPUrlID, forKey: "HTTPUrl")
-        dict.setObject(test.TimeIntervalID, forKey: "TimeInterval")
-        dict.writeToFile(path!, atomically: true)
+        dict.setObject(test.HTTPUrlID, forKey: "HTTPUrl" as NSCopying)
+        dict.setObject(test.TimeIntervalID, forKey: "TimeInterval" as NSCopying)
+        dict.write(toFile: path!, atomically: true)
         self.view.window?.close()
     }
     
