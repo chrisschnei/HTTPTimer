@@ -42,7 +42,7 @@ class PreferencesViewController: NSViewController {
         self.loadConfigurationPlist()
     }
     
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         }
     }

@@ -60,11 +60,12 @@ class ViewController: NSViewController {
         self.startButton.isEnabled = false
         self.stopButton.isEnabled = true
         //Get Time
-        let date = Date()
-        let calendar = Calendar.current
-        let components = (calendar as NSCalendar).components([.hour, .minute], from: date)
-        let hour = components.hour
-        let minutes = components.minute
+        let date = NSDate()
+        let calendar = NSCalendar.current
+        print(calendar.dateComponents([.year, .month, .day, .hour, .minute], from: date as Date))
+        let components = (calendar.dateComponents([.hour, .minute], from: date as Date))
+        let hour = components.hour!
+        let minutes = components.minute!
         self.startedAtLabel.stringValue = String(describing: hour) + ":" + String(describing: minutes)
 
         self.loopActive = true
@@ -79,7 +80,7 @@ class ViewController: NSViewController {
         self.isActive.stringValue = "stopped"
     }
     
-    override var representedObject: AnyObject? {
+    override var representedObject: Any? {
         didSet {
         }
     }
