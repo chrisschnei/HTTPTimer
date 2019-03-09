@@ -27,7 +27,6 @@ class PreferencesViewController: NSViewController {
     }
     
     @IBAction func saveConfiguration(_ sender: AnyObject) {
-        //set data
         test.HTTPUrlID = URLText.stringValue as AnyObject
         test.TimeIntervalID = (self.IntervalText.selectedItem!.title as NSString).doubleValue
         let path = Bundle.main.path(forResource: "HTTPTimer", ofType: "plist")

@@ -22,22 +22,21 @@ class ViewController: NSViewController {
     @IBOutlet weak var hostLabel: NSTextField!
     @IBOutlet weak var iterationsLabel: NSTextField!
     @IBOutlet weak var startedAtLabel: NSTextField!
-    //Todo make singleton class so only one time read required.
+    
     func loadConfigurationPlist() {
         let path = Bundle.main.path(forResource: "HTTPTimer", ofType: "plist")
         let myDict = NSDictionary(contentsOfFile: path!)
         if (myDict != nil) {
             self.HTTPUrlID = myDict!.value(forKey: "HTTPUrl")! as AnyObject
-            self.TimeIntervalID = Double(myDict!.value(forKey: "TimeInterval")! as! NSNumber)
+            self.TimeIntervalID = Double(truncating: myDict!.value(forKey: "TimeInterval")! as! NSNumber)
         } else {
             print("WARNING: Couldn't create dictionary from HTTPTimer.plist! Default values will be used!")
         }
     }
     
-    func sendHTTPRequest() {
+    @objc func sendHTTPRequest() {
         let url = URL(string: ("http://" + (self.HTTPUrlID as! String)))
         let task = URLSession.shared.dataTask(with: url!, completionHandler: {(data, response, error) in
-//            println(NSString(data: data, encoding: NSUTF8StringEncoding))
         }) 
         task.resume()
         self.iterations += 1
@@ -47,7 +46,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.stopButton.isEnabled = false
-        //Load Plist Settings
+        
         self.loadConfigurationPlist()
     }
     
@@ -59,7 +58,7 @@ class ViewController: NSViewController {
         self.isActive.stringValue = "started"
         self.startButton.isEnabled = false
         self.stopButton.isEnabled = true
-        //Get Time
+        
         let date = NSDate()
         let calendar = NSCalendar.current
         print(calendar.dateComponents([.year, .month, .day, .hour, .minute], from: date as Date))
