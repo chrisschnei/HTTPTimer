@@ -1,0 +1,7 @@
+language: swift
+os: osx
+osx_image: xcode10.1
+xcode_project: HTTPTimer.xcodeproject
+xcode_scheme: HTTPTimer
+xcode_destination: platform=macOS
+script: xcodebuild -project HTTPTimer.xcodeproj -scheme HTTPTimer -destination 'platform=OS X,arch=x86_64' clean build | xcpretty -c || true
