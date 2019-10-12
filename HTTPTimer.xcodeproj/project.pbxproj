@@ -14,6 +14,17 @@
 		AA23D8441B7FDE0B006B2007 /* HTTPTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA23D8431B7FDE0B006B2007 /* HTTPTimerTests.swift */; };
 		AA23D84E1B8093F8006B2007 /* HTTPTimer.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA23D84D1B8093F8006B2007 /* HTTPTimer.plist */; };
 		AA5E766D1B80C97C00F7854E /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5E766C1B80C97C00F7854E /* PreferencesViewController.swift */; };
+		AAAEDAAB2351C54000F7D436 /* 16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA12351C54000F7D436 /* 16x16.png */; };
+		AAAEDAAC2351C54000F7D436 /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA22351C54000F7D436 /* 1024x1024.png */; };
+		AAAEDAAD2351C54000F7D436 /* 256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA32351C54000F7D436 /* 256x256.png */; };
+		AAAEDAAE2351C54000F7D436 /* HTTPTimer.afdesign in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA42351C54000F7D436 /* HTTPTimer.afdesign */; };
+		AAAEDAAF2351C54000F7D436 /* 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA52351C54000F7D436 /* 128x128.png */; };
+		AAAEDAB02351C54000F7D436 /* 32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA62351C54000F7D436 /* 32x32.png */; };
+		AAAEDAB12351C54000F7D436 /* generateLogos.sh in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA72351C54000F7D436 /* generateLogos.sh */; };
+		AAAEDAB22351C54000F7D436 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA82351C54000F7D436 /* 512x512.png */; };
+		AAAEDAB32351C54000F7D436 /* 64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA92351C54000F7D436 /* 64x64.png */; };
+		AAAEDAB42351C54000F7D436 /* HTTPTimer.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAAA2351C54000F7D436 /* HTTPTimer.png */; };
+		AAAEDAB82351C83000F7D436 /* appUI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAB72351C83000F7D436 /* appUI.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,17 @@
 		AA23D8431B7FDE0B006B2007 /* HTTPTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTimerTests.swift; sourceTree = "<group>"; };
 		AA23D84D1B8093F8006B2007 /* HTTPTimer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HTTPTimer.plist; sourceTree = "<group>"; };
 		AA5E766C1B80C97C00F7854E /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		AAAEDAA12351C54000F7D436 /* 16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16x16.png; sourceTree = "<group>"; };
+		AAAEDAA22351C54000F7D436 /* 1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024x1024.png; sourceTree = "<group>"; };
+		AAAEDAA32351C54000F7D436 /* 256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 256x256.png; sourceTree = "<group>"; };
+		AAAEDAA42351C54000F7D436 /* HTTPTimer.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = HTTPTimer.afdesign; sourceTree = "<group>"; };
+		AAAEDAA52351C54000F7D436 /* 128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128x128.png; sourceTree = "<group>"; };
+		AAAEDAA62351C54000F7D436 /* 32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32x32.png; sourceTree = "<group>"; };
+		AAAEDAA72351C54000F7D436 /* generateLogos.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = generateLogos.sh; sourceTree = "<group>"; };
+		AAAEDAA82351C54000F7D436 /* 512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 512x512.png; sourceTree = "<group>"; };
+		AAAEDAA92351C54000F7D436 /* 64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64x64.png; sourceTree = "<group>"; };
+		AAAEDAAA2351C54000F7D436 /* HTTPTimer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HTTPTimer.png; sourceTree = "<group>"; };
+		AAAEDAB72351C83000F7D436 /* appUI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appUI.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +101,7 @@
 		AA23D82D1B7FDE0B006B2007 /* HTTPTimer */ = {
 			isa = PBXGroup;
 			children = (
+				AAAEDAB92351C83700F7D436 /* graphics */,
 				AA23D8301B7FDE0B006B2007 /* AppDelegate.swift */,
 				AA23D8321B7FDE0B006B2007 /* ViewController.swift */,
 				AA23D8341B7FDE0B006B2007 /* Images.xcassets */,
@@ -113,6 +136,40 @@
 				AA23D8421B7FDE0B006B2007 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AAAEDAA02351C54000F7D436 /* appicon */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEDAA12351C54000F7D436 /* 16x16.png */,
+				AAAEDAA22351C54000F7D436 /* 1024x1024.png */,
+				AAAEDAA32351C54000F7D436 /* 256x256.png */,
+				AAAEDAA42351C54000F7D436 /* HTTPTimer.afdesign */,
+				AAAEDAA52351C54000F7D436 /* 128x128.png */,
+				AAAEDAA62351C54000F7D436 /* 32x32.png */,
+				AAAEDAA72351C54000F7D436 /* generateLogos.sh */,
+				AAAEDAA82351C54000F7D436 /* 512x512.png */,
+				AAAEDAA92351C54000F7D436 /* 64x64.png */,
+				AAAEDAAA2351C54000F7D436 /* HTTPTimer.png */,
+			);
+			path = appicon;
+			sourceTree = "<group>";
+		};
+		AAAEDAB62351C83000F7D436 /* appUI */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEDAB72351C83000F7D436 /* appUI.jpg */,
+			);
+			path = appUI;
+			sourceTree = "<group>";
+		};
+		AAAEDAB92351C83700F7D436 /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEDAA02351C54000F7D436 /* appicon */,
+				AAAEDAB62351C83000F7D436 /* appUI */,
+			);
+			path = graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +257,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA23D84E1B8093F8006B2007 /* HTTPTimer.plist in Resources */,
+				AAAEDAB82351C83000F7D436 /* appUI.jpg in Resources */,
+				AAAEDAAE2351C54000F7D436 /* HTTPTimer.afdesign in Resources */,
+				AAAEDAB02351C54000F7D436 /* 32x32.png in Resources */,
 				AA23D8351B7FDE0B006B2007 /* Images.xcassets in Resources */,
+				AAAEDAB32351C54000F7D436 /* 64x64.png in Resources */,
+				AAAEDAAC2351C54000F7D436 /* 1024x1024.png in Resources */,
+				AAAEDAB42351C54000F7D436 /* HTTPTimer.png in Resources */,
+				AAAEDAAF2351C54000F7D436 /* 128x128.png in Resources */,
+				AAAEDAAB2351C54000F7D436 /* 16x16.png in Resources */,
+				AAAEDAAD2351C54000F7D436 /* 256x256.png in Resources */,
+				AAAEDAB12351C54000F7D436 /* generateLogos.sh in Resources */,
+				AAAEDAB22351C54000F7D436 /* 512x512.png in Resources */,
 				AA23D8381B7FDE0B006B2007 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
