@@ -6,31 +6,55 @@
 //  Copyright (c) 2015 NonameCompany. All rights reserved.
 //
 
-import Cocoa
 import XCTest
+@testable import HTTPTimer
 
 class HTTPTimerTests: XCTestCase {
     
+    var vc: ViewController!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        let storyboard = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: Bundle.main)
+        vc = (storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "ViewController")) as? ViewController)!
+        _ = vc.view
+        vc.viewDidLoad()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+    func testConfigurationLoading()
+    {
+        vc.loadConfigurationPlist()
+        
+        /* URL should never be empty. */
+        if ((vc.HTTPUrlID as! String).isEmpty) {
+            XCTAssert(false)
+            return
         }
+        
+        /* Sending packages to url should not be started. */
+        if (vc.loopActive) {
+            XCTAssert(false)
+            return
+        }
+        
+        /* Program is just started so iterations should be 0. */
+        if (vc.iterations != 0) {
+            XCTAssert(false)
+            return
+        }
+        
+        /* Only numbers are valid. */
+        if (vc.TimeIntervalID.isNaN) {
+            XCTAssert(false)
+            return
+        }
+        
+        XCTAssert(true)
     }
     
 }

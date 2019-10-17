@@ -17,14 +17,11 @@
 		AAAEDAAB2351C54000F7D436 /* 16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA12351C54000F7D436 /* 16x16.png */; };
 		AAAEDAAC2351C54000F7D436 /* 1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA22351C54000F7D436 /* 1024x1024.png */; };
 		AAAEDAAD2351C54000F7D436 /* 256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA32351C54000F7D436 /* 256x256.png */; };
-		AAAEDAAE2351C54000F7D436 /* HTTPTimer.afdesign in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA42351C54000F7D436 /* HTTPTimer.afdesign */; };
 		AAAEDAAF2351C54000F7D436 /* 128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA52351C54000F7D436 /* 128x128.png */; };
 		AAAEDAB02351C54000F7D436 /* 32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA62351C54000F7D436 /* 32x32.png */; };
-		AAAEDAB12351C54000F7D436 /* generateLogos.sh in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA72351C54000F7D436 /* generateLogos.sh */; };
 		AAAEDAB22351C54000F7D436 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA82351C54000F7D436 /* 512x512.png */; };
 		AAAEDAB32351C54000F7D436 /* 64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA92351C54000F7D436 /* 64x64.png */; };
-		AAAEDAB42351C54000F7D436 /* HTTPTimer.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAAA2351C54000F7D436 /* HTTPTimer.png */; };
-		AAAEDAB82351C83000F7D436 /* appUI.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAB72351C83000F7D436 /* appUI.jpg */; };
+		AAAEDABB2351DB8E00F7D436 /* PreferencesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEDABA2351DB8E00F7D436 /* PreferencesViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +57,7 @@
 		AAAEDAA92351C54000F7D436 /* 64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64x64.png; sourceTree = "<group>"; };
 		AAAEDAAA2351C54000F7D436 /* HTTPTimer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HTTPTimer.png; sourceTree = "<group>"; };
 		AAAEDAB72351C83000F7D436 /* appUI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appUI.jpg; sourceTree = "<group>"; };
+		AAAEDABA2351DB8E00F7D436 /* PreferencesViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +124,7 @@
 			children = (
 				AA23D8431B7FDE0B006B2007 /* HTTPTimerTests.swift */,
 				AA23D8411B7FDE0B006B2007 /* Supporting Files */,
+				AAAEDABA2351DB8E00F7D436 /* PreferencesViewTests.swift */,
 			);
 			path = HTTPTimerTests;
 			sourceTree = "<group>";
@@ -257,17 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA23D84E1B8093F8006B2007 /* HTTPTimer.plist in Resources */,
-				AAAEDAB82351C83000F7D436 /* appUI.jpg in Resources */,
-				AAAEDAAE2351C54000F7D436 /* HTTPTimer.afdesign in Resources */,
 				AAAEDAB02351C54000F7D436 /* 32x32.png in Resources */,
 				AA23D8351B7FDE0B006B2007 /* Images.xcassets in Resources */,
 				AAAEDAB32351C54000F7D436 /* 64x64.png in Resources */,
 				AAAEDAAC2351C54000F7D436 /* 1024x1024.png in Resources */,
-				AAAEDAB42351C54000F7D436 /* HTTPTimer.png in Resources */,
 				AAAEDAAF2351C54000F7D436 /* 128x128.png in Resources */,
 				AAAEDAAB2351C54000F7D436 /* 16x16.png in Resources */,
 				AAAEDAAD2351C54000F7D436 /* 256x256.png in Resources */,
-				AAAEDAB12351C54000F7D436 /* generateLogos.sh in Resources */,
 				AAAEDAB22351C54000F7D436 /* 512x512.png in Resources */,
 				AA23D8381B7FDE0B006B2007 /* Main.storyboard in Resources */,
 			);
@@ -298,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA23D8441B7FDE0B006B2007 /* HTTPTimerTests.swift in Sources */,
+				AAAEDABB2351DB8E00F7D436 /* PreferencesViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -484,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
