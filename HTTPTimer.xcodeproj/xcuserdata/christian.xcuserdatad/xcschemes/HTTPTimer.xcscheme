@@ -52,6 +52,16 @@
                ReferencedContainer = "container:HTTPTimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AAAEDAC123590C1A00F7D436"
+               BuildableName = "HTTPTimerUITests.xctest"
+               BlueprintName = "HTTPTimerUITests"
+               ReferencedContainer = "container:HTTPTimer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

@@ -22,10 +22,18 @@
 		AAAEDAB22351C54000F7D436 /* 512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA82351C54000F7D436 /* 512x512.png */; };
 		AAAEDAB32351C54000F7D436 /* 64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAEDAA92351C54000F7D436 /* 64x64.png */; };
 		AAAEDABB2351DB8E00F7D436 /* PreferencesViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEDABA2351DB8E00F7D436 /* PreferencesViewTests.swift */; };
+		AAAEDAC523590C1B00F7D436 /* HTTPTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEDAC423590C1B00F7D436 /* HTTPTimerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		AA23D83E1B7FDE0B006B2007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA23D8231B7FDE0B006B2007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA23D82A1B7FDE0B006B2007;
+			remoteInfo = HTTPTimer;
+		};
+		AAAEDAC723590C1B00F7D436 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA23D8231B7FDE0B006B2007 /* Project object */;
 			proxyType = 1;
@@ -58,6 +66,9 @@
 		AAAEDAAA2351C54000F7D436 /* HTTPTimer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HTTPTimer.png; sourceTree = "<group>"; };
 		AAAEDAB72351C83000F7D436 /* appUI.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = appUI.jpg; sourceTree = "<group>"; };
 		AAAEDABA2351DB8E00F7D436 /* PreferencesViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewTests.swift; sourceTree = "<group>"; };
+		AAAEDAC223590C1A00F7D436 /* HTTPTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTPTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAEDAC423590C1B00F7D436 /* HTTPTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTimerUITests.swift; sourceTree = "<group>"; };
+		AAAEDAC623590C1B00F7D436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAAEDABF23590C1A00F7D436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +101,7 @@
 			children = (
 				AA23D82D1B7FDE0B006B2007 /* HTTPTimer */,
 				AA23D8401B7FDE0B006B2007 /* HTTPTimerTests */,
+				AAAEDAC323590C1B00F7D436 /* HTTPTimerUITests */,
 				AA23D82C1B7FDE0B006B2007 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +111,7 @@
 			children = (
 				AA23D82B1B7FDE0B006B2007 /* HTTPTimer.app */,
 				AA23D83D1B7FDE0B006B2007 /* HTTPTimerTests.xctest */,
+				AAAEDAC223590C1A00F7D436 /* HTTPTimerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,6 +191,15 @@
 			path = graphics;
 			sourceTree = "<group>";
 		};
+		AAAEDAC323590C1B00F7D436 /* HTTPTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEDAC423590C1B00F7D436 /* HTTPTimerUITests.swift */,
+				AAAEDAC623590C1B00F7D436 /* Info.plist */,
+			);
+			path = HTTPTimerUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,6 +238,24 @@
 			productReference = AA23D83D1B7FDE0B006B2007 /* HTTPTimerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AAAEDAC123590C1A00F7D436 /* HTTPTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAAEDAC923590C1B00F7D436 /* Build configuration list for PBXNativeTarget "HTTPTimerUITests" */;
+			buildPhases = (
+				AAAEDABE23590C1A00F7D436 /* Sources */,
+				AAAEDABF23590C1A00F7D436 /* Frameworks */,
+				AAAEDAC023590C1A00F7D436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAAEDAC823590C1B00F7D436 /* PBXTargetDependency */,
+			);
+			name = HTTPTimerUITests;
+			productName = HTTPTimerUITests;
+			productReference = AAAEDAC223590C1A00F7D436 /* HTTPTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,7 +263,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = NonameCompany;
 				TargetAttributes = {
@@ -227,6 +274,11 @@
 					AA23D83C1B7FDE0B006B2007 = {
 						CreatedOnToolsVersion = 6.4;
 						LastSwiftMigration = 0900;
+						TestTargetID = AA23D82A1B7FDE0B006B2007;
+					};
+					AAAEDAC123590C1A00F7D436 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = AA23D82A1B7FDE0B006B2007;
 					};
 				};
@@ -246,6 +298,7 @@
 			targets = (
 				AA23D82A1B7FDE0B006B2007 /* HTTPTimer */,
 				AA23D83C1B7FDE0B006B2007 /* HTTPTimerTests */,
+				AAAEDAC123590C1A00F7D436 /* HTTPTimerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +328,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAAEDAC023590C1A00F7D436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -297,6 +357,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AAAEDABE23590C1A00F7D436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAAEDAC523590C1B00F7D436 /* HTTPTimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +372,11 @@
 			isa = PBXTargetDependency;
 			target = AA23D82A1B7FDE0B006B2007 /* HTTPTimer */;
 			targetProxy = AA23D83E1B7FDE0B006B2007 /* PBXContainerItemProxy */;
+		};
+		AAAEDAC823590C1B00F7D436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA23D82A1B7FDE0B006B2007 /* HTTPTimer */;
+			targetProxy = AAAEDAC723590C1B00F7D436 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -497,6 +570,52 @@
 			};
 			name = Release;
 		};
+		AAAEDACA23590C1B00F7D436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HTTPTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonamecompany.HTTPTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = HTTPTimer;
+			};
+			name = Debug;
+		};
+		AAAEDACB23590C1B00F7D436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HTTPTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nonamecompany.HTTPTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = HTTPTimer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -523,6 +642,15 @@
 			buildConfigurations = (
 				AA23D84B1B7FDE0C006B2007 /* Debug */,
 				AA23D84C1B7FDE0C006B2007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAAEDAC923590C1B00F7D436 /* Build configuration list for PBXNativeTarget "HTTPTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAAEDACA23590C1B00F7D436 /* Debug */,
+				AAAEDACB23590C1B00F7D436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
